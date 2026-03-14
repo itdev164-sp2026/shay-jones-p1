@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 import Layout from "../components/layout"
@@ -10,15 +10,13 @@ const BlogContainer = styled.div`
   margin-top: 40px;
   padding: 20px;
 `
-
 const BlogTitle = styled.h2`
-  color: purple;
+  color: #e278b4;
 `
-
 const PostCard = styled.div`
   margin-bottom: 20px;
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #e278b4;
 `
 
 const IndexPage = ({ data }) => {
@@ -39,6 +37,7 @@ const IndexPage = ({ data }) => {
 
         <h1>Welcome to Shay's Blog</h1>
         <p>This site pulls blog posts from Contentful CMS.</p>
+        <p>Feel free to explore the posts below!</p>
       </div>
 
       <BlogContainer>
